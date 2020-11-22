@@ -1,0 +1,64 @@
+#learn-word {
+    padding: 30px 0 50px 0;
+}
+
+.unfinished-words {
+    padding: 10px;
+    border-radius: 15px;
+    background-color: cyan;
+}
+.learn-word__title {
+    padding: 30px;
+    text-transform: uppercase;
+    text-align: center;
+}
+.display-block, .upper__block {
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    border: palegreen 1px solid;
+}
+.upper__block {
+    padding: 20px 20px;
+    font-size: 25px;
+    border-radius: 15px;
+    background-color: cornflowerblue;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.self_word {
+    width: 100px;
+    font-weight: bold;
+}
+.definition {
+    width: 250px;
+}
+.delete {
+    border: 0;
+    height: 30px;
+    background-color: #fff;
+    font-size: 15px;
+    cursor: pointer;
+    padding: 5px 10px;
+    border-radius: 10px;
+}
+.input__words {
+    display: flex;
+    justify-content: center;
+}
+#new-word {
+    padding: 10px 20px;
+    border-radius: 10px;
+    margin-right: 10px;
+    font-size: 18px;
+}
+.input_word {
+    font-size: 20px;
+    cursor: pointer;
+    padding: 10px 20px;
+}
+#random_word {
+    font-size: 20px;
+    cursor: pointer;
+    padding: 10px 20px;
+}

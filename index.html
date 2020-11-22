@@ -5,21 +5,134 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Task #8</title>
     <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/learnWord.css">
 </head>
 <body>
-    <div class="results">
-        <div id="cat_result" class="result">
-            <p>Random Cat PlaceHolder</p>
+    <header>
+        <div class="container">
+            <nav class="header__nav">
+                <div class="nav__logo">
+                    <span class="nav__logo-text">learn english by self</span>
+                </div>
+                <ul class="nav__menu">
+                    <li class="nav__item">
+                        <a href="#about-me" class="nav__link">About me</a>
+                    </li>
+                    <li class="nav__item">    
+                        <a href="#learn-word" class="nav__link">Words</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#books" class="nav__link">Books</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#jokes" class="nav__link">Jokes</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#translator" class="nav__link">Translator</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#footer" class="nav__link">Contacts</a>
+                    </li>
+                </ul>
+            </nav>
         </div>
-        <div id="dog_result" class="result">
-            <p>Random Dog PlaceHolder</p>
+    </header>
+    <section id="about-me">
+        <div class="about-me__inner">
+            <h2 class="about-me__title">
+                About me
+            </h2>
+            <p class="about-me__text">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Deleniti nostrum voluptates eaque amet magnam nisi perferendis
+                ratione deserunt iusto rerum cum aspernatur optio fugit debitis,
+                nihil reiciendis consequatur sunt incidunt, quisquam dolorem
+                reprehenderit aliquid? Labore voluptatum temporibus debitis placeat eligendi!
+            </p>
         </div>
-    </div>
-
-    <div class="buttons">
-        <button id="cat_btn">Get cat</button>
-        <button id="dog_btn">Get dog</button>
-    </div>
-    <script src="./script.js"></script>
+    </section>
+    <section id="learn-word">
+        <div class="container">
+            <div class="learn-word__inner">
+                <h3 class="learn-word__title">add new word</h3>
+                <div class="input__words">
+                    <input id="new-word" type="text">
+                    <button id="input_word" class="input_word">Input new word</button>
+                    <span class="input_word">OR</span>
+                    <button id="random_word">Add random word</button>
+                </div>
+                <h3 class="learn-word__title">list of words:</h3>
+                <div class="upper__block">
+                    <div class="upper__word">WORD</div>
+                    <div class="upper__definition">DEFINITION</div>
+                    <div class="button">BUTTON</div>
+                </div>
+                <div id="unfinished-words" class="unfinished-words">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="books">
+        <div class="container">
+            <h1 class="books__title">
+                READ BOOKS
+            </h1>
+            <div class="books__names-block">
+                <p class="books__names">
+                    <a href="https://www.gutenberg.org/files/1661/1661-h/1661-h.htm" target="iframe_a">The Adventures of Sherlock Holmes</a>
+                </p>
+                <p class="books__names">
+                    <a href="https://www.gutenberg.org/files/3090/3090-h/3090-h.htm" target="iframe_a">Maupassant Original Short Stories</a>
+                </p>
+                <p class="books__names">
+                    <a href="https://www.gutenberg.org/files/972/972-h/972-h.htm" target="iframe_a">THE DEVIL'S DICTIONARY</a>
+                </p>
+            </div>
+            <iframe
+                src=""
+                title="W3Schools Free Online Web Tutorials"
+                width="100%" height="350" style="border:1px solid black;"
+                name="iframe_a"
+                >
+            </iframe>
+        </div>
+    </section>
+    <section id="jokes">
+        <div class="container">
+            <h1 class="jokes__title">
+                jokes
+            </h1>
+            <div class="jokes__block">
+                <div id="jokes__setup">
+                        
+                </div>
+                <button id="getJoke">Get JOKE</button>
+            </div>
+            <div id="jokes__punchline">
+                    
+            </div>
+        </div>
+    </section>
+    <section id="translator">
+        <div class="container">
+            <h1 class="translator__title">
+                TRANSLATOR
+            </h1>
+            <div class="translator__container">
+                <textarea id="en_word" name="w3review" rows="4" cols="40">Enter english word, then click!
+                </textarea>
+                <textarea id="ru_word" name="w3review" rows="4" cols="40">
+                </textarea>
+            </div>
+            <button id="translate">Translate to RU</button>
+        </div>
+    </section>
+    <footer id="footer">
+        <div class="container">
+            <div class="footer__text">@kairatbek_d</div>
+        </div>
+    </footer>
+    <script src="./script/learnWord.js"></script>
+    <script src="./script/script.js"></script>
 </body>
 </html>
