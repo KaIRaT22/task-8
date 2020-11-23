@@ -72,7 +72,7 @@ function getInputWord() {
         .catch(err => {
 		console.log(err);
 		alert("Enter the right word!");
-		);
+	});
     }
 }
 
