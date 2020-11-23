@@ -69,7 +69,10 @@ function getInputWord() {
         .then((resp => {
             addWord(resp.word, resp.definitions[0].definition);
         }))
-        .catch(err => console.log(err));
+        .catch(err => {
+		console.log(err);
+		alert("Enter the right word!");
+		);
     }
 }
 
